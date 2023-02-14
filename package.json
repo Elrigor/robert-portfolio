@@ -1,5 +1,6 @@
 {
   "name": "robert-portfolio",
+  "homepage": "https://robert.soy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
