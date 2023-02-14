@@ -16,8 +16,8 @@ const Button = styled.button`
 
 const Dropdown = styled.div`
   background-color: var(--color-bg);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 1px solid var(--color-primary-variant);
+  color: var(--color-white);
   border-radius: 4px;
   padding: 6px;
   z-index: 2;

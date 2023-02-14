@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css'
 import ME from '../../assets/me.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import { useTranslation } from "react-i18next";
 
@@ -16,7 +15,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img style={{height:"100%"}} src={ME} alt="About Image" />
           </div>
         </div>
 
@@ -35,15 +34,10 @@ const About = () => {
             </article>
           </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eos voluptatem eius dolorem maiores nihil ducimus at rem ullam reprehenderit quidem quia deserunt, molestiae, eligendi amet repellat molestias quos totam.
+          <p> 
+            Soy una persona con experiencia sobre todo, en apliaciones web. <br/>
+            No obstante, he trabajado en varios proyectos tales como aplicaciones móviles, apliaciones de escritorio y bots de todo tipo (Discord, Telegram, Twitter etc.).<br/>
+            Me encanta la programación y me gusta mucho aprender cosas nuevas al respecto. 
           </p>
 
           <a href="#contact" className='btn btn-primary'>{t("talk")}</a>
