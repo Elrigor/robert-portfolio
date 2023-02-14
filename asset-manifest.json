@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robert-portfolio/static/css/main.ca5a6b12.css",
-    "main.js": "/robert-portfolio/static/js/main.51493117.js",
+    "main.css": "/robert-portfolio/static/css/main.849fa777.css",
+    "main.js": "/robert-portfolio/static/js/main.c9aa116f.js",
     "static/media/cv.pdf": "/robert-portfolio/static/media/cv.696a346e96b1f2f0700d.pdf",
     "static/media/wizardeo.png": "/robert-portfolio/static/media/wizardeo.0784728f5ea8ef5e8faa.png",
     "static/media/me.png": "/robert-portfolio/static/media/me.c86af31c6ac41e177117.png",
@@ -9,11 +9,11 @@
     "static/media/me.jpg": "/robert-portfolio/static/media/me.339537ad103a9890b3ec.jpg",
     "static/media/task.png": "/robert-portfolio/static/media/task.7931d4c1c0d42f7e34c9.png",
     "index.html": "/robert-portfolio/index.html",
-    "main.ca5a6b12.css.map": "/robert-portfolio/static/css/main.ca5a6b12.css.map",
-    "main.51493117.js.map": "/robert-portfolio/static/js/main.51493117.js.map"
+    "main.849fa777.css.map": "/robert-portfolio/static/css/main.849fa777.css.map",
+    "main.c9aa116f.js.map": "/robert-portfolio/static/js/main.c9aa116f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca5a6b12.css",
-    "static/js/main.51493117.js"
+    "static/css/main.849fa777.css",
+    "static/js/main.c9aa116f.js"
   ]
 }
