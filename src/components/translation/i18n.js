@@ -1,6 +1,7 @@
 const resources = {
   en: {
     translation: {
+      "home": "Home",
       "download": "Download Resume",
       "greeting": "Hello, I'm",
       "developer": "Full Stack Developer",
@@ -25,10 +26,18 @@ const resources = {
       "hutaoweb": "Hutao Web for Discord Bot made with React",
       "wizardeoweb": "Wizardeo Blog Web made with Wagtail",
       "taskbot": "Tasks Web made with React and Tailwind",
+      "live": "Live",
+      "contact": "Contact Me",
+      "fullname": "Your Full Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "sendmessage": "Send Message",
+      "right": "All rights reserved",
     }
   },
   es: {
     translation: {
+      "home": "Inicio",
       "download": "Descargar CV",
       "greeting": "Hola, soy",
       "developer": "Desarrollador Full Stack",
@@ -53,6 +62,13 @@ const resources = {
       "hutaoweb": "Web Hutao para Bot de Discord hecha con React",
       "wizardeoweb": "Web Blog de Wizardeo hecha con Wagtail",
       "taskbot": "Web de Tareas hecha con React y Tailwind",
+      "live": "En Vivo",
+      "contact": "Ponte en contacto",
+      "fullname": "Tu Nombre Completo",
+      "email": "Tu Correo Electrónico",
+      "message": "Tu Mensaje",
+      "sendmessage": "Enviar Mensaje",
+      "right": "Todos los derechos reservados",
     }
   }
 };

@@ -21,7 +21,6 @@ import {TbCSharp} from 'react-icons/tb'
 import {FaJava} from 'react-icons/fa'
 import {FaAngular} from 'react-icons/fa'
 import {SiHtmlacademy} from 'react-icons/si'
-
 import { useTranslation } from "react-i18next";
 
 const Skill = () => {

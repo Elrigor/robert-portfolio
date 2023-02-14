@@ -3,6 +3,8 @@ import './projects.css'
 import IMG1 from '../../assets/hutao.png'
 import IMG2 from '../../assets/wizardeo.png'
 import IMG3 from '../../assets/task.png'
+import {AiFillGithub} from 'react-icons/ai'
+import {HiStatusOnline} from 'react-icons/hi'
 import { useTranslation } from "react-i18next";
 
 
@@ -56,8 +58,8 @@ const Projects = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="project__item-cta">
-                  {github && <a href={github} className='btn' target='_blank'>Github</a>}
-                  {demo && <a href={demo} className='btn btn-primary' target='_blank'>Live</a>}
+                  {github && <a href={github} className='btn' target='_blank'>Github <AiFillGithub /></a>}
+                  {demo && <a href={demo} className='btn btn-primary' target='_blank'>{t("live")} <HiStatusOnline /></a>}
                 </div>
               </article>
             )
