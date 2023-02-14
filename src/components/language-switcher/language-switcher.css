@@ -23,11 +23,11 @@
 }
 
 .hover-lang:hover{
-    width: max-content;
     display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
+    color: var(--color-white);
+    background-color: var(--color-bg-variant);
     border-radius: 0.4rem;
+    width: 100%;
     cursor: pointer;
     transition: var(--transition);
 }

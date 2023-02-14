@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import styled from "styled-components";
 import i18n from "i18next";
-import {FaLanguage} from 'react-icons/fa'
+import {MdOutlineLanguage} from 'react-icons/md'
 
 import './language-switcher.css'
 
@@ -21,7 +21,7 @@ const Dropdown = styled.div`
   border-radius: 4px;
   padding: 6px;
   z-index: 2;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left  10px;
   margin-right: 1em;
   
@@ -49,7 +49,6 @@ const DropdownItem = styled.div`
 
 const ChangeLanguage = () => {
   const { t, i18n } = useTranslation();
-  const [ setLanguage] = useState(i18n.language);
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleLanguageChange = (lng) => {
@@ -58,10 +57,10 @@ const ChangeLanguage = () => {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "flex-end" }}>
+    <div id="top" style={{ display: "flex", justifyContent: "flex-end" }}>
         
       <Button onClick={() => setShowDropdown(!showDropdown)}>
-        <FaLanguage className="lang-icon" />
+        <MdOutlineLanguage className="lang-icon" />
       </Button>
       <Dropdown show={showDropdown}>
         <DropdownItem className="hover-lang" onClick={() => handleLanguageChange("en")}>
