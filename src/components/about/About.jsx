@@ -1,8 +1,9 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me.jpg'
-import {FaAward} from 'react-icons/fa'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import {BsFillAwardFill} from 'react-icons/bs'
+import {RiCodeBoxFill} from 'react-icons/ri'
+import {IoLanguageSharp} from 'react-icons/io5'
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -22,16 +23,20 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
-              <FaAward className='about__icon'/>
+              <BsFillAwardFill className='about__icon'/>
               <h5>{t("experience")}</h5>
               <small>2+ {t("working")}</small>
             </article>
-
             <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
+              <RiCodeBoxFill className='about__icon'/>
               <h5>{t("projects")}</h5>
               <small>15+ {t("completed")}</small>
             </article>
+            <article className='about__card'>
+              <IoLanguageSharp   className='about__icon'/>
+              <h5>{t("lang")}</h5>
+              <small>{t("b2")}</small>
+            </article>            
           </div>
 
           <p> 
