@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import styled from "styled-components";
 import i18n from "i18next";
-import {MdOutlineLanguage} from 'react-icons/md'
+import {IoLanguage} from 'react-icons/io5'
 
 import './language-switcher.css'
 
@@ -60,7 +60,7 @@ const ChangeLanguage = () => {
     <div id="top" style={{ display: "flex", justifyContent: "flex-end" }}>
         
       <Button onClick={() => setShowDropdown(!showDropdown)}>
-        <MdOutlineLanguage className="lang-icon" />
+        <IoLanguage className="lang-icon" />
       </Button>
       <Dropdown show={showDropdown}>
         <DropdownItem className="hover-lang" onClick={() => handleLanguageChange("en")}>

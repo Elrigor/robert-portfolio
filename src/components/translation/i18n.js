@@ -21,6 +21,10 @@ const resources = {
       "skills": "Skills",
       "b2": "B2 English level",
       "lang": "Languages",
+      "personalprj": "My personal projects",
+      "hutaoweb": "Hutao Web for Discord Bot made with React",
+      "wizardeoweb": "Wizardeo Blog Web made with Wagtail",
+      "taskbot": "Tasks Web made with React and Tailwind",
     }
   },
   es: {
@@ -45,6 +49,10 @@ const resources = {
       "skills": "Habilidades",
       "b2": "Nivel de inglés B2",
       "lang": "Idiomas",
+      "personalprj": "Mis proyectos personales",
+      "hutaoweb": "Web Hutao para Bot de Discord hecha con React",
+      "wizardeoweb": "Web Blog de Wizardeo hecha con Wagtail",
+      "taskbot": "Web de Tareas hecha con React y Tailwind",
     }
   }
 };

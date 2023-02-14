@@ -5,7 +5,8 @@ import Nav from './components/nav/Nav'
 import Header from './components/header/Header'
 import About from './components/about/About'
 import Skill from './components/skills/Skills'
-
+import Projects from './components/projects/Projects'
+import Footer from './components/footer/Footer'
 const App = () => {
   return (
     <>
@@ -14,7 +15,8 @@ const App = () => {
         <Header />
         <About />
         <Skill />
-
+        <Projects />
+        <Footer />
     </>
   )
 }
