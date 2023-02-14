@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 .project__image{
-  width: 323px;
+  width: 100%;
   height: 242px;
 }
 .project__item h3 {
