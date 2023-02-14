@@ -1,0 +1,33 @@
+.switcher-div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+}
+
+.btn-margin{
+    margin-right: 10px;
+}
+
+.lang-icon{
+    width: 3em;
+    height: 3em;
+    color:var(--color-primary)
+}
+
+.lang-icon:hover{
+    color: var(--color-white);
+    transition: var(--transition);
+    transform: scale(1.1);
+    border-radius: 0.4rem;
+}
+
+.hover-lang:hover{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
