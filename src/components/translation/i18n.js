@@ -15,7 +15,6 @@ const resources = {
       "ba": "Basic",
       "in": "Intermediate",
       "ad": "Advanced",
-      "ex": "Experienced",
       "backdev": "Backend Development",
       "frontdev": "Frontend Development",
       "knowledge": "What Knowledge Do I Have?",
@@ -33,6 +32,8 @@ const resources = {
       "message": "Your Message",
       "sendmessage": "Send Message",
       "right": "All rights reserved",
+      "english": "English",
+      "spanish": "Spanish",
     }
   },
   es: {
@@ -51,7 +52,6 @@ const resources = {
       "ba": "Básico",
       "in": "Intermedio",
       "ad": "Avanzado",
-      "ex": "Experimentado",     
       "backdev": "Desarrollo Backend",
       "frontdev": "Desarrollo Frontend",
       "knowledge": "¿Qué Conocimientos Tengo?",
@@ -69,6 +69,8 @@ const resources = {
       "message": "Tu Mensaje",
       "sendmessage": "Enviar Mensaje",
       "right": "Todos los derechos reservados",
+      "english": "Inglés",
+      "spanish": "Español",
     }
   }
 };

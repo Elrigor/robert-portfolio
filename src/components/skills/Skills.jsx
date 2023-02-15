@@ -38,35 +38,35 @@ const Skill = () => {
               <AiFillHtml5 className='skill__details-icon' />
               <div>
                 <h4>HTML</h4>
-                <small className='text-light'>{t("ex")} <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <IoLogoCss3 className='skill__details-icon' />
               <div>
                 <h4>CSS</h4>
-                <small className='text-light'>{t("ex")} <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <DiJavascript1 className='skill__details-icon' />
               <div>
                 <h4>JavaScript</h4>
-                <small className='text-light'>{t("ex")} <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <FaBootstrap className='skill__details-icon' />
               <div>
                 <h4>Bootstrap</h4>
-                <small className='text-light'>{t("ad")}</small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <FaReact className='skill__details-icon' />
               <div>
                 <h4>React</h4>
-                <small className='text-light'>{t("ad")}</small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>            
             <article className='skill__details'>
@@ -122,49 +122,49 @@ const Skill = () => {
               <FaPython className='skill__details-icon' />
               <div>
                 <h4>Python</h4>
-                <small className='text-light'>Experienced <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <SiDjango className='skill__details-icon' />
               <div>
                 <h4>Django</h4>
-                <small className='text-light'>Experienced <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>          
             <article className='skill__details'>
               <SiWagtail className='skill__details-icon' />
               <div>
                 <h4>Wagtail</h4>
-                <small className='text-light'>Experienced <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <TbCSharp className='skill__details-icon' />
               <div>
                 <h4>C#</h4>
-                <small className='text-light'>{t("ex")} <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>           
             <article className='skill__details'>
               <FaJava className='skill__details-icon' />
               <div>
                 <h4>Java</h4>
-                <small className='text-light'>{t("ex")} <BsPatchCheckFill className='skill__check-icon'/></small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>                                   
             <article className='skill__details'>
               <FaNodeJs className='skill__details-icon' />
               <div>
                 <h4>Node JS</h4>
-                <small className='text-light'>{t("ad")} </small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>
               <SiPostgresql className='skill__details-icon' />
               <div>
                 <h4>PostgreSQL</h4>
-                <small className='text-light'>{t("ad")} </small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article>
             <article className='skill__details'>

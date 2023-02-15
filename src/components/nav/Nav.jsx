@@ -25,7 +25,7 @@ const Nav = () => {
         const element = document.querySelector(link);
         if (
           element &&
-          window.pageYOffset >= element.offsetTop - 6000 &&
+          window.pageYOffset >= element.offsetTop - 500 &&
           window.pageYOffset < element.offsetTop + element.offsetHeight
         ) {
           setActiveNav(link);

@@ -64,10 +64,10 @@ const ChangeLanguage = () => {
       </Button>
       <Dropdown show={showDropdown}>
         <DropdownItem className="hover-lang" onClick={() => handleLanguageChange("en")}>
-          English
+          {t("english")}
         </DropdownItem>
         <DropdownItem className="hover-lang"onClick={() => handleLanguageChange("es")}>
-          Español
+          {t("spanish")}
         </DropdownItem>
       </Dropdown>
     </div>
