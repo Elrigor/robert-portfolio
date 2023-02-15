@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to robert.soy
 
 on:
   push:
@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.5.3
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
         with:
-          node-version: '18.x'
+          node-version: 14.x
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          publish_dir: ./build
-          cname: robert.soy
+          branch: gh-pages
+          folder: build
