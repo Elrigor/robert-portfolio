@@ -35,6 +35,19 @@
   margin-bottom: 1rem;
 }
 
+
+@keyframes icon-animation-glow {
+  0% {
+    color: var(--color-white);
+  }
+  50% {
+    color: var(--color-primary);
+  }
+  100% {
+    color: var(--color-white);
+  }
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .project__container {
@@ -48,5 +61,20 @@
   .project__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+.live-icon  {
+  animation: live-glow 2s linear infinite;
+}
+@keyframes live-glow {
+  0% {
+    color: rgb(109, 17, 17)
+  }
+  50% {
+    color: #f3cd9c
+  }
+  100% {
+    color: rgb(109, 17, 17)
   }
 }

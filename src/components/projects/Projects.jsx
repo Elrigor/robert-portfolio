@@ -105,7 +105,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {t("live")} <HiStatusOnline />
+                    {t("live")} <HiStatusOnline className="live-icon" />
                   </a>
                 )}
               </div>
