@@ -77,7 +77,8 @@ section > h2 {
   color: var(--color-light);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--color-primary);
   background: rgb(240, 234, 216);
 }
@@ -96,7 +97,7 @@ a {
   -tap-highlight-color: transparent;
 }
 
-.icon-size{
+.icon-size {
   width: 2em;
   height: 2em;
 }

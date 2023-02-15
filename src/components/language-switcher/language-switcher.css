@@ -1,37 +1,35 @@
-.switcher-div{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-
+.switcher-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
-.btn-margin{
-    margin-right: 10px;
+.btn-margin {
+  margin-right: 10px;
 }
 
-.lang-icon{
-    width: 2em;
-    height: 2em;
-    color:var(--color-primary)
+.lang-icon {
+  width: 2em;
+  height: 2em;
+  color: var(--color-primary);
 }
 
-.lang-icon:hover{
-    color: var(--color-white);
-    transition: var(--transition);
-    transform: scale(1.1);
-    border-radius: 0.4rem;
+.lang-icon:hover {
+  color: var(--color-white);
+  transition: var(--transition);
+  transform: scale(1.1);
+  border-radius: 0.4rem;
 }
 
-.hover-lang:hover{
-    display: inline-block;
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border-radius: 0.4rem;
-    width: 100%;
-    cursor: pointer;
-    transition: var(--transition);
+.hover-lang:hover {
+  display: inline-block;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 0.4rem;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--transition);
 }
-
 
 .switcher-div {
   display: flex;
@@ -45,20 +43,19 @@
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 750px) {
-    .mobile__switches {
-      display: flex !important; 
-      margin-right: 3%;
-      justify-content: flex-end;
-    }
-    .disable__mobile__switches {
-        display: none;
-        background-color: red;
-    }
+  .mobile__switches {
+    display: flex !important;
+    margin-right: 3%;
+    justify-content: flex-end;
+  }
+  .disable__mobile__switches {
+    display: none;
+    background-color: red;
+  }
+}
 
+@media screen and (min-width: 750px) {
+  .disable_all {
+    display: none;
   }
-  
-  @media screen and (min-width: 750px) {
-    .disable_all {
-        display: none;
-    }
-  }
+}

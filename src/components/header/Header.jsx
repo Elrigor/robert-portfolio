@@ -1,10 +1,9 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import HeaderSocial from './HeaderSocials'
+import React from "react";
+import "./header.css";
+import CTA from "./CTA";
+import HeaderSocial from "./HeaderSocials";
 import { useTranslation } from "react-i18next";
-import HeaderSwitches from './HeaderSwitches';
-
+import HeaderSwitches from "./HeaderSwitches";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -20,7 +19,7 @@ const Header = () => {
         <HeaderSwitches />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

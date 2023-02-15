@@ -1,25 +1,19 @@
-import React from 'react'
-import './nav.css'
-import {AiFillHome} from 'react-icons/ai'
-import {RiUser2Fill} from 'react-icons/ri'
-import {BiCodeAlt} from 'react-icons/bi'
-import {MdOutlineWork} from 'react-icons/md'
+import React from "react";
+import "./nav.css";
+import { AiFillHome } from "react-icons/ai";
+import { RiUser2Fill } from "react-icons/ri";
+import { BiCodeAlt } from "react-icons/bi";
+import { MdOutlineWork } from "react-icons/md";
 
-import {AiFillMessage} from 'react-icons/ai'
-import {useState, useEffect} from 'react'
+import { AiFillMessage } from "react-icons/ai";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#top");
 
   useEffect(() => {
     const handleScroll = () => {
-      const anchorLinks = [
-        "#top",
-        "#about",
-        "#skill",
-        "#projects",
-        "#contact",
-      ];
+      const anchorLinks = ["#top", "#about", "#skill", "#projects", "#contact"];
 
       for (const link of anchorLinks) {
         const element = document.querySelector(link);
@@ -55,35 +49,35 @@ const Nav = () => {
         onClick={() => setActiveNav("#top")}
         className={activeNav === "#top" ? "active" : ""}
       >
-        <AiFillHome/>
+        <AiFillHome />
       </a>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
-        <RiUser2Fill/>
+        <RiUser2Fill />
       </a>
       <a
         href="#skill"
         onClick={() => setActiveNav("#skill")}
         className={activeNav === "#skill" ? "active" : ""}
       >
-        <MdOutlineWork/>
+        <MdOutlineWork />
       </a>
       <a
         href="#projects"
         onClick={() => setActiveNav("#projects")}
         className={activeNav === "#projects" ? "active" : ""}
       >
-        <BiCodeAlt/>
+        <BiCodeAlt />
       </a>
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
-        <AiFillMessage/>
+        <AiFillMessage />
       </a>
     </nav>
   );
