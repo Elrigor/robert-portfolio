@@ -1,29 +1,20 @@
 import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
-import i18n from "i18next";
 import {IoLanguage} from 'react-icons/io5'
-
 import './language-switcher.css'
-
-const Button = styled.button`
-  background-color: transparent;
-  position: relative;
-  margin-top: 1em;
-  margin-right: 1em;
-  cursor: pointer;
-`;
+import LightMode from "../lightmode-switcher/Lightmode-switcher";
+import Cookies from "js-cookie";
 
 const Dropdown = styled.div`
   background-color: var(--color-bg);
-  border: 1px solid var(--color-primary-variant);
-  color: var(--primary-color);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
   border-radius: 4px;
   padding: 6px;
   z-index: 2;
-  margin-top: 20px;
-  margin-left  10px;
-  margin-right: 1em;
+  margin-right: 3em;
+  margin-top: 1em;
   
   width: 100px;
   display: ${(props) => (props.show ? "block" : "none")};
@@ -43,33 +34,76 @@ const Dropdown = styled.div`
 `;
 
 const DropdownItem = styled.div`
-  padding: 10px;
-  cursor: pointer;
+padding: 10px;
+cursor: pointer;
 `;
 
+const Wrapper = styled.div``;
+
 const ChangeLanguage = () => {
+  const ref = useRef();
   const { t, i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleLanguageChange = (lng) => {
     i18n.changeLanguage(lng);
     setShowDropdown(false);
+    Cookies.set('language', lng, { expires: 365 });
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [ref]);
+
   return (
-    <div id="top" style={{ display: "flex", justifyContent: "flex-end" }}>
-        
-      <Button onClick={() => setShowDropdown(!showDropdown)}>
-        <IoLanguage className="lang-icon" />
-      </Button>
-      <Dropdown show={showDropdown}>
-        <DropdownItem className="hover-lang" onClick={() => handleLanguageChange("en")}>
-          {t("english")}
-        </DropdownItem>
-        <DropdownItem className="hover-lang"onClick={() => handleLanguageChange("es")}>
-          {t("spanish")}
-        </DropdownItem>
-      </Dropdown>
+    <div>
+        <div ref={ref} className="disable__mobile__switches">
+        <a onClick={() => setShowDropdown(!showDropdown)}>
+          <IoLanguage className="icon-size" />
+        </a>
+        {showDropdown && (
+          <Wrapper onClick={() => setShowDropdown(false)}>
+            <Dropdown show={showDropdown}>
+              <DropdownItem
+                className="hover-lang"
+                onClick={() => handleLanguageChange("en")}
+              >
+                {t("english")}
+              </DropdownItem>
+              <DropdownItem
+                className="hover-lang"
+                onClick={() => handleLanguageChange("es")}
+              >
+                {t("spanish")}
+              </DropdownItem>
+            </Dropdown>
+          </Wrapper>
+        )}
+       </div> 
+        <div className="mobile__switches" style={{ display: "none"}}>
+          <LightMode />
+          <a onClick={() => setShowDropdown(!showDropdown)}>
+            <IoLanguage className="icon-size" />
+          </a>
+          <Dropdown show={showDropdown}>
+            <DropdownItem className="hover-lang" onClick={() => handleLanguageChange("en")}>
+              {t("english")}
+            </DropdownItem>
+            <DropdownItem className="hover-lang"onClick={() => handleLanguageChange("es")}>
+              {t("spanish")}
+            </DropdownItem>
+          </Dropdown>
+      </div>
     </div>
   );
 };

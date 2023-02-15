@@ -1,0 +1,50 @@
+.light-mode {
+    --color-bg: #e2e2e2;
+    --color-bg-variant: #f3cd9c;
+    --color-primary: #ca6702;
+    --color-primary-variant: #38a3a5;
+    --color-white: #000000;
+    --color-light: rgba(0, 0, 0, 0.6);
+  }
+
+  .lightmode-switcher {
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 50px;
+    height: 24px;
+    padding:5px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  .lightmode-switcher:hover {
+    color: var(--color-white);
+  }
+  
+  .light-switcher-icon{
+    width: 2em;
+    height: 2em;
+    color:var(--color-primary)
+}
+
+.switcher-light-dark:hover .icon-size {
+  animation: icon-animation 1s linear infinite;
+}
+
+@keyframes icon-animation {
+  0% {
+    transform: rotate(0deg);
+    color: #ccc;
+  }
+  50% {
+    transform: rotate(180deg);
+    color: var(--color-primary);
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #ccc;
+  }
+}

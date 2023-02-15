@@ -17,9 +17,6 @@ i18n
       escapeValue: false
     },
     
-    changeLanguage: (lng) => {
-      Cookies.set("language", lng);
-    }
   });
 
 const root = document.getElementById('root');

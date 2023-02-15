@@ -1,6 +1,5 @@
 header {
-  height: 100vh;
-  padding-top: 7rem;
+  padding-top: 4rem;
   overflow: hidden;
 }
 
@@ -18,7 +17,7 @@ header {
   justify-content: center;
 }
 
-/* =============== HEADER SOCIALS ============== */
+/* =============== HEADER SIDES ============== */
 .header__socials {
   display: flex;
   flex-direction: column;
@@ -28,7 +27,21 @@ header {
   left: 0;
   bottom: 3rem;
 }
-
+.header__switches{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 3rem;
+}
+.header__switches::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
 .header__socials::after {
   content: "";
   width: 1px;
@@ -36,47 +49,23 @@ header {
   background: var(--color-primary);
 }
 
-/* =============== ME ============== */
-.me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
-}
-
-
-
-/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
-@media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
-  }
-}
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   header {
-    height: 100vh;
     padding-top: 4rem;
   }
-
+  .mobile__switches {
+    display: flex; 
+    justify-content: flex-end;
+  }
   .header__socials {
     display: none;
   }
 
-  .me {
-    width: 94%;
-    max-width: 20rem;
-    margin-top: 2.5rem;
-    justify-content: center;
+  .header__switches {
+    display: none;
   }
-
   .cta {
     margin-top: 1.7rem;
     gap: 1rem;
