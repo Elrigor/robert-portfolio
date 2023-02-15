@@ -2,10 +2,11 @@ import React from "react";
 import "./projects.css";
 import IMG1 from "../../assets/hutao.png";
 import IMG2 from "../../assets/wizardeo.png";
-import IMG3 from "../../assets/task.png";
+import IMG3 from "../../assets/mihaim.png";
 import IMG4 from "../../assets/portfolio.png";
-import IMG5 from "../../assets/hutaobot.png";
-import IMG6 from "../../assets/tools.png";
+import IMG5 from "../../assets/tools.png";
+import IMG6 from "../../assets/task.png"; 
+import IMG7 from "../../assets/hutaobot.png";
 import { AiFillGithub } from "react-icons/ai";
 import { HiStatusOnline } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
@@ -28,10 +29,11 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "taskbot",
-    github: "https://github.com/Elrigor/React-Tasks-Application",
-    demo: "https://elrigor.github.io/React-Tasks-Application/",
-  },
+    title: "mihaim",
+    github: "",
+    demo: "https://mihaim.es",
+  },   
+
   {
     id: 4,
     image: IMG4,
@@ -42,17 +44,24 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: "hutaobot",
-    github: "",
-    demo: "",
-  },
-  {
-    id: 6,
-    image: IMG6,
     title: "tools",
     github: "",
     demo: "https://tools.wizardeo.es",
   },
+  {
+    id: 6,
+    image: IMG6,
+    title: "taskbot",
+    github: "https://github.com/Elrigor/React-Tasks-Application",
+    demo: "https://elrigor.github.io/React-Tasks-Application/",
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: "hutaobot",
+    github: "",
+    demo: "",
+  },   
 ];
 
 const Projects = () => {

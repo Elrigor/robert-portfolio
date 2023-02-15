@@ -39,6 +39,7 @@ const resources = {
       system: "System Management",
       portfolio: "Personal Portfolio made with React",
       tools: "Collaborative tools web made using Nuxt.js, Vue.js and Vuetify",
+      mihaim: "Official Website for the MihaiM Construction Company"      
     },
   },
   es: {
@@ -80,8 +81,8 @@ const resources = {
       web: "Administración de Webs",
       system: "Administración de Sistemas",
       portfolio: "Portafolio Personal hecho con React",
-      tools:
-        "Web de herramientas colaborativa hecha utilizando Nuxt.js, Vue.js y Vuetify",
+      tools: "Web de herramientas colaborativa hecha utilizando Nuxt.js, Vue.js y Vuetify",
+      mihaim: "Sitio Web oficial para la empresa de Construcción MihaiM"
     },
   },
 };

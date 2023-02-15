@@ -45,6 +45,7 @@ const MobileSwitches = () => {
   const ref = useRef();
 
   const handleLanguageChange = (lng) => {
+    setShowDropdown(false);
     i18n.changeLanguage(lng);
   };
 
