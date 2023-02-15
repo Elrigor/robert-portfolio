@@ -18,9 +18,10 @@
     padding:5px;
     border-radius: 12px;
     cursor: pointer;
-    animation: icon-animation-glow 1s linear infinite;
   }
-  
+  .glowing-icon{
+    animation: icon-animation-glow 3s linear infinite;
+  }
   .lightmode-switcher:hover {
     color: var(--color-white);
   }
@@ -38,26 +39,29 @@
 @keyframes icon-animation {
   0% {
     transform: rotate(0deg);
-    color: #ccc;
+    color: var(--color-white);
   }
   50% {
     transform: rotate(180deg);
     color: var(--color-primary);
   }
+  75% {
+    color: var(--color-white);
+  }  
   100% {
     transform: rotate(360deg);
-    color: #ccc;
+    color: var(--color-white);
   }
 }
 
 @keyframes icon-animation-glow {
   0% {
-    color: #ccc;
+    color: var(--color-white);
   }
   50% {
     color: var(--color-primary);
   }
   100% {
-    color: #ccc;
+    color: var(--color-white);
   }
 }

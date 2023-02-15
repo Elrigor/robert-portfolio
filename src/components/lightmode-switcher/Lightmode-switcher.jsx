@@ -30,7 +30,7 @@ function LightMode() {
   }, [isDarkMode]);
 
   return (
-    <a id="dark-light-icon" className="switcher-light-dark mobile__switches" onClick={toggleMode}>
+    <a id="dark-light-icon" className="switcher-light-dark mobile__switches glowing-icon" onClick={toggleMode}>
       {isDarkMode ? <HiMoon className='icon-size '/> : <BsFillSunFill className='icon-size'/>}
     </a>
   );
