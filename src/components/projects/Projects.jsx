@@ -52,7 +52,7 @@ const data = [
     image: IMG6,
     title: 'tools',
     github: '',
-    demo: ''
+    demo: 'https://tools.wizardeo.es'
   },
 ]
 
