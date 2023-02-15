@@ -19,6 +19,8 @@ function LightMode() {
 
   const toggleMode = () => {
     const newColorPreference = isDarkMode ? 'light' : 'dark';
+    const icon = document.getElementById('dark-light-icon');
+    icon.classList.add('switcher-light-dark');
     Cookies.set('color-preference', newColorPreference, { expires: 365 });
     setIsDarkMode(!isDarkMode);
   }
@@ -28,7 +30,7 @@ function LightMode() {
   }, [isDarkMode]);
 
   return (
-    <a className="switcher-light-dark mobile__switches" onClick={toggleMode}>
+    <a id="dark-light-icon" className="switcher-light-dark mobile__switches" onClick={toggleMode}>
       {isDarkMode ? <HiMoon className='icon-size '/> : <BsFillSunFill className='icon-size'/>}
     </a>
   );
