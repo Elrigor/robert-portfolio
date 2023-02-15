@@ -259,14 +259,14 @@ const Skill = () => {
             <FaUbuntu className='skill__details-icon' />
             <div>
               <h4>Ubuntu</h4>
-              <small className='text-light'>{t("ad")}</small>
+              <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
             </div>
           </article> 
           <article className='skill__details'>
               <DiDebian className='skill__details-icon' />
               <div>
                 <h4>Debian</h4>
-                <small className='text-light'>{t("ad")}</small>
+                <small className='text-light'>{t("ad")} <BsPatchCheckFill className='skill__check-icon'/></small>
               </div>
             </article> 
             <article className='skill__details'>

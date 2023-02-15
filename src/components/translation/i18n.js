@@ -22,7 +22,8 @@ const resources = {
       "b2": "B2 English level",
       "lang": "Languages",
       "personalprj": "My personal projects",
-      "hutaoweb": "Hutao Web for Discord Bot made with React",
+      "hutaoweb": "Hutao Web for Discord Bot made with Django",
+      "hutaobot": "Discord Bot made with Python and Discord.py",
       "wizardeoweb": "Wizardeo Blog Web made with Wagtail",
       "taskbot": "Tasks Web made with React and Tailwind",
       "live": "Live",
@@ -36,6 +37,8 @@ const resources = {
       "spanish": "Spanish",
       "web": "Web Management",
       "system": "System Management",
+      "portfolio": "Personal Portfolio made with React",
+      "tools": "Collaborative tools web made using Nuxt.js, Vue.js and Vuetify",
     }
   },
   es: {
@@ -61,7 +64,8 @@ const resources = {
       "b2": "Nivel de inglés B2",
       "lang": "Idiomas",
       "personalprj": "Mis proyectos personales",
-      "hutaoweb": "Web Hutao para Bot de Discord hecha con React",
+      "hutaoweb": "Web Hutao para Bot de Discord hecha con Django",
+      "hutaobot": "Bot de Discord hecho con Python y Discord.py",
       "wizardeoweb": "Web Blog de Wizardeo hecha con Wagtail",
       "taskbot": "Web de Tareas hecha con React y Tailwind",
       "live": "En Vivo",
@@ -75,6 +79,8 @@ const resources = {
       "spanish": "Español",
       "web": "Administración de Webs",
       "system": "Administración de Sistemas",
+      "portfolio": "Portafolio Personal hecho con React",
+      "tools": "Web de herramientas colaborativa hecha utilizando Nuxt.js, Vue.js y Vuetify",
     }
   }
 };

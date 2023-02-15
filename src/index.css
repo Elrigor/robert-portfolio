@@ -33,12 +33,6 @@ html {
   display: none;
 }
 
-button::-moz-focus-inner,
-button:focus {
-  outline: none;
-}
-
-
 body {
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
@@ -83,9 +77,23 @@ section > h2 {
   color: var(--color-light);
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--color-primary);
+  background: rgb(240, 234, 216);
+}
+
+::selection {
+  color: var(--color-primary);
+  background: rgb(240, 234, 216);
+}
+
 a {
   color: var(--color-primary);
   transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -tap-highlight-color: transparent;
 }
 
 .icon-size{

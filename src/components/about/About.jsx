@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me.jpg'
+import IMG from '../../assets/code.jpg'
 import {BsFillAwardFill} from 'react-icons/bs'
 import {RiCodeBoxFill} from 'react-icons/ri'
 import {IoLanguageSharp} from 'react-icons/io5'
@@ -16,7 +16,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img style={{height:"100%"}} src={ME} alt="About Image" />
+            <img style={{height:"100%"}} src={IMG} alt="About Image" />
           </div>
         </div>
 
