@@ -31,7 +31,7 @@
 }
 
 .switcher-light-dark:hover .icon-size {
-  animation: icon-animation 1s linear infinite;
+  animation: icon-animation 1s linear, icon-animation-glow 1s linear infinite;
 }
 
 @keyframes icon-animation {
@@ -45,6 +45,18 @@
   }
   100% {
     transform: rotate(360deg);
+    color: #ccc;
+  }
+}
+
+@keyframes icon-animation-glow {
+  0% {
+    color: #ccc;
+  }
+  50% {
+    color: var(--color-primary);
+  }
+  100% {
     color: #ccc;
   }
 }
