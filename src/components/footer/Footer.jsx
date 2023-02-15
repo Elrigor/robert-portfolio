@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <ul className='permalinks'>
-        <li><a href="#">{t("home")}</a></li>
+        <li><a href="#top">{t("home")}</a></li>
         <li><a href="#about">{t("about")}</a></li>
         <li><a href="#skill">{t("skills")}</a></li>
         <li><a href="#projects">{t("projects")}</a></li>

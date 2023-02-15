@@ -65,7 +65,7 @@ const MobileSwitches = () => {
     return (
       <div ref={ref} className="mobile__switches" style={{ display: "none", marginTop: '3%'}}>
         <LightMode />
-        <a onClick={() => setShowDropdown(!showDropdown)}>
+        <a href="" onClick={() => setShowDropdown(!showDropdown)}>
           <IoLanguage className="icon-size" />
         </a>
         {showDropdown && (

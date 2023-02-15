@@ -68,7 +68,7 @@ const ChangeLanguage = () => {
   return (
     <div>
         <div ref={ref} className="disable__mobile__switches">
-        <a onClick={() => setShowDropdown(!showDropdown)}>
+        <a href="" onClick={() => setShowDropdown(!showDropdown)}>
           <IoLanguage className="icon-size" />
         </a>
         {showDropdown && (
@@ -92,7 +92,7 @@ const ChangeLanguage = () => {
        </div> 
         <div className="mobile__switches" style={{ display: "none"}}>
           <LightMode />
-          <a onClick={() => setShowDropdown(!showDropdown)}>
+          <a href="" onClick={() => setShowDropdown(!showDropdown)}>
             <IoLanguage className="icon-size" />
           </a>
           <Dropdown show={showDropdown}>

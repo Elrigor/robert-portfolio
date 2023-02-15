@@ -81,8 +81,8 @@ const Projects = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="project__item-cta">
-                  {github && <a href={github} className='btn' target='_blank'>Github <AiFillGithub /></a>}
-                  {demo && <a href={demo} className='btn btn-primary' target='_blank'>{t("live")} <HiStatusOnline /></a>}
+                  {github && <a href={github} className='btn' target='_blank' rel="noopener noreferrer">Github <AiFillGithub /></a>}
+                  {demo && <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">{t("live")} <HiStatusOnline /></a>}
                 </div>
               </article>
             )
