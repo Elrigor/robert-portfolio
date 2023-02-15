@@ -34,6 +34,8 @@ const resources = {
       "right": "All rights reserved",
       "english": "English",
       "spanish": "Spanish",
+      "web": "Web Management",
+      "system": "System Management",
     }
   },
   es: {
@@ -71,6 +73,8 @@ const resources = {
       "right": "Todos los derechos reservados",
       "english": "Inglés",
       "spanish": "Español",
+      "web": "Administración de Webs",
+      "system": "Administración de Sistemas",
     }
   }
 };

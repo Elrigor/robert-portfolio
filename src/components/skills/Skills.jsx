@@ -21,6 +21,22 @@ import {TbCSharp} from 'react-icons/tb'
 import {FaJava} from 'react-icons/fa'
 import {FaAngular} from 'react-icons/fa'
 import {SiHtmlacademy} from 'react-icons/si'
+import {MdDns} from 'react-icons/md'
+import {AiFillLock} from 'react-icons/ai'
+import {FaEnvelope} from 'react-icons/fa'
+import {IoStatsChartSharp} from 'react-icons/io5'
+import {SiNginx} from 'react-icons/si'
+import {SiApache} from 'react-icons/si'
+import {GiUnicorn} from 'react-icons/gi'
+import {TfiGithub} from 'react-icons/tfi'
+import {AiFillGithub} from 'react-icons/ai'
+import {BiGitBranch} from 'react-icons/bi'
+import {AiFillGitlab} from 'react-icons/ai'
+import {FaDocker} from 'react-icons/fa'
+import {FaUbuntu} from 'react-icons/fa'
+import {SiArchlinux} from 'react-icons/si'
+import {DiDebian} from 'react-icons/di'
+
 import { useTranslation } from "react-i18next";
 
 const Skill = () => {
@@ -116,7 +132,7 @@ const Skill = () => {
         {/* END OF FRONTEND */}
 
         <div className="skill__backend">
-        <h3>{t("backdev")}</h3>
+          <h3>{t("backdev")}</h3>
           <div className="skill__content">
           <article className='skill__details'>
               <FaPython className='skill__details-icon' />
@@ -197,6 +213,124 @@ const Skill = () => {
             </article>        
           </div>
         </div>
+        {/* END OF BACKEND */}
+        <div className="skill__backend">
+        <h3>{t("web")}</h3>
+          <div className="skill__content">
+            <article className='skill__details'>
+              <MdDns className='skill__details-icon' />
+              <div>
+                <h4>DNS</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>
+            <article className='skill__details'>
+              <AiFillLock className='skill__details-icon' />
+              <div>
+                <h4>SSL</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>   
+            <article className='skill__details'>
+              <FaEnvelope className='skill__details-icon' />
+              <div>
+                <h4>MX</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article> 
+            <article className='skill__details'>
+              <IoStatsChartSharp className='skill__details-icon' />
+              <div>
+                <h4>SEO</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>
+            <article className='skill__details'>
+              <SiNginx className='skill__details-icon' />
+              <div>
+                <h4>Nginx</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>   
+            <article className='skill__details'>
+              <SiApache className='skill__details-icon' />
+              <div>
+                <h4>Apache</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>  
+            <article className='skill__details'>
+              <GiUnicorn className='skill__details-icon' />
+              <div>
+                <h4>Gunicorn</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>  
+            <article className='skill__details'>
+              <TfiGithub className='skill__details-icon' />
+              <div>
+                <h4>GH Pages</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>              
+          </div>
+        </div>
+        {/* END OF WEB SKILLS */}
+        <div className="skill__backend">
+        <h3>{t("system")}</h3>
+          <div className="skill__content">
+          <article className='skill__details'>
+            <FaUbuntu className='skill__details-icon' />
+            <div>
+              <h4>Ubuntu</h4>
+              <small className='text-light'>{t("ad")}</small>
+            </div>
+          </article> 
+          <article className='skill__details'>
+              <DiDebian className='skill__details-icon' />
+              <div>
+                <h4>Debian</h4>
+                <small className='text-light'>{t("ad")}</small>
+              </div>
+            </article> 
+            <article className='skill__details'>
+              <BiGitBranch className='skill__details-icon' />
+              <div>
+                <h4>Git</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>
+            <article className='skill__details'>
+              <AiFillGithub className='skill__details-icon' />
+              <div>
+                <h4>Github</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>   
+            <article className='skill__details'>
+              <AiFillGitlab className='skill__details-icon' />
+              <div>
+                <h4>Gitlab</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article> 
+            <article className='skill__details'>
+              <FaDocker className='skill__details-icon' />
+              <div>
+                <h4>Docker</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>  
+            <article className='skill__details'>
+              <SiArchlinux className='skill__details-icon' />
+              <div>
+                <h4>Arch</h4>
+                <small className='text-light'>{t("in")}</small>
+              </div>
+            </article>         
+          </div>
+        </div>
+        {/* END OF SYSTEM SKILLS */}
       </div>
     </section>
   )
