@@ -1,47 +1,15 @@
-import { useTranslation } from "react-i18next";
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { IoLanguage } from "react-icons/io5";
 import "./language-switcher.css";
 import Cookies from "js-cookie";
-
-const Dropdown = styled.div`
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-primary);
-  color: var(--color-white);
-  border-radius: 4px;
-  padding: 6px;
-  z-index: 2;
-  margin-right: 3em;
-  margin-top: 1em;
-
-  width: 100px;
-  display: ${(props) => (props.show ? "block" : "none")};
-  position: absolute;
-  top: 40px;
-  right: 0;
-  animation: fadeIn 0.3s ease-in-out;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
-
-const DropdownItem = styled.div`
-  padding: 10px;
-  cursor: pointer;
-`;
-
+import Dropdown from "./Dropdown";
+import { useTranslation } from "react-i18next";
 const Wrapper = styled.div``;
 
 const ChangeLanguage = () => {
   const ref = useRef();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleLanguageChange = (lng) => {
@@ -71,24 +39,11 @@ const ChangeLanguage = () => {
       </a>
       {showDropdown && (
         <Wrapper onClick={() => setShowDropdown(false)}>
-          <Dropdown show={showDropdown}>
-            <DropdownItem
-              className="hover-lang"
-              onClick={() => handleLanguageChange("en")}
-            >
-              {t("english")}
-            </DropdownItem>
-            <DropdownItem
-              className="hover-lang"
-              onClick={() => handleLanguageChange("es")}
-            >
-              {t("spanish")}
-            </DropdownItem>
-          </Dropdown>
+          <Dropdown handleLanguageChange={handleLanguageChange} />
         </Wrapper>
       )}
     </div>
   );
 };
 
-export default ChangeLanguage;
+export default React.memo(ChangeLanguage);
