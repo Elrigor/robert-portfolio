@@ -9,7 +9,7 @@ import {SiArchlinux} from 'react-icons/si'
 const System = () => {
   const { t } = useTranslation();
   return (
-    <div className="skill__backend">
+    <div className="skill__systems">
       <h3>{t("system")}</h3>
       <div className="skill__content">
         <article className="skill__details">

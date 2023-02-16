@@ -22,7 +22,14 @@ const Projects = () => {
 
       <div className="container project__container">
         {translatedData.map((project) => (
-          <ProjectItem {...project} />
+          <ProjectItem
+            key={project.id}
+            id={project.id}
+            image={project.image}
+            title={project.title}
+            github={project.github}
+            demo={project.demo}
+          />
         ))}
       </div>
     </section>

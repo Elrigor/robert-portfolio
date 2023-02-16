@@ -11,7 +11,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 const Web = () => {
   const { t } = useTranslation();
   return (
-    <div className="skill__backend">
+    <div className="skill__web">
       <h3>{t("web")}</h3>
       <div className="skill__content">
         <article className="skill__details">
