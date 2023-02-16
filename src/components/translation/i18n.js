@@ -39,7 +39,12 @@ const resources = {
       system: "System Management",
       portfolio: "Personal Portfolio made with React",
       tools: "Collaborative tools web made using Nuxt.js, Vue.js and Vuetify",
-      mihaim: "Official Website for the MihaiM Construction Company"      
+      mihaim: "Official Website for the MihaiM Construction Company",
+      about__description: `
+        I am a person with experience in web applications.
+        However, I have worked on several projects such as mobile applications, desktop applications and bots of all kinds (Discord, Telegram, Twitter etc.).
+        I love programming and I really like learning new things about it.
+      `,
     },
   },
   es: {
@@ -81,8 +86,14 @@ const resources = {
       web: "Administración de Webs",
       system: "Administración de Sistemas",
       portfolio: "Portafolio Personal hecho con React",
-      tools: "Web de herramientas colaborativa hecha utilizando Nuxt.js, Vue.js y Vuetify",
-      mihaim: "Sitio Web oficial para la empresa de Construcción MihaiM"
+      tools:
+        "Web de herramientas colaborativa hecha utilizando Nuxt.js, Vue.js y Vuetify",
+      mihaim: "Sitio Web oficial para la empresa de Construcción MihaiM",
+      about__description: `
+        Soy una persona con experiencia sobre todo, en apliaciones web.
+        No obstante, he trabajado en varios proyectos tales comoaplicaciones móviles, apliaciones de escritorio y bots de todo tipo(Discord, Telegram, Twitter etc.).
+        Me encanta la programación y me gusta mucho aprender cosas nuevas alrespecto.
+      `,
     },
   },
 };

@@ -40,14 +40,7 @@ const About = () => {
           </div>
 
           <p>
-            Soy una persona con experiencia sobre todo, en apliaciones web.{" "}
-            <br />
-            No obstante, he trabajado en varios proyectos tales como
-            aplicaciones móviles, apliaciones de escritorio y bots de todo tipo
-            (Discord, Telegram, Twitter etc.).
-            <br />
-            Me encanta la programación y me gusta mucho aprender cosas nuevas al
-            respecto.
+            {t("about__description")}
           </p>
 
           <a href="#contact" className="btn btn-primary">
