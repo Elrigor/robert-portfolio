@@ -36,6 +36,7 @@ const MobileSwitches = () => {
 
   return (
     <div
+      id="MobileTop"
       ref={ref}
       className="mobile__switches"
       style={{ display: "none", marginTop: "3%" }}

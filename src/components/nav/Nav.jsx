@@ -36,11 +36,13 @@ const Nav = () => {
   }, [activeNav]);
 
   useEffect(() => {
+    const targetTop = window.innerWidth < 750 ? document.querySelector("#MobileTop").offsetTop : document.querySelector("#top").offsetTop;
     window.scrollTo({
-      top: document.querySelector("#top").offsetTop,
+      top: targetTop,
       behavior: "smooth",
     });
   }, []);
+  
 
   return (
     <nav>
