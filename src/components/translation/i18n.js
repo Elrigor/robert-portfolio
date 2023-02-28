@@ -91,8 +91,8 @@ const resources = {
       mihaim: "Sitio Web oficial para la empresa de Construcción MihaiM",
       about__description: `
         Soy una persona con experiencia sobre todo, en apliaciones web.
-        No obstante, he trabajado en varios proyectos tales comoaplicaciones móviles, apliaciones de escritorio y bots de todo tipo(Discord, Telegram, Twitter etc.).
-        Me encanta la programación y me gusta mucho aprender cosas nuevas alrespecto.
+        No obstante, he trabajado en varios proyectos tales como aplicaciones móviles, apliaciones de escritorio y bots de todo tipo(Discord, Telegram, Twitter etc.).
+        Me encanta la programación y me gusta mucho aprender cosas nuevas al respecto.
       `,
     },
   },
