@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_l4xttmd",
+      "service_8c7ok1q",
       "template_5r55bfk",
       form.current,
       "GWx7QbjsUEjz2X-a2"
@@ -31,9 +31,9 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>bonfirez@wizardeo.es</h5>
+            <h5>contacto@robert.soy</h5>
             <a
-              href="mailto:bonfirez@wizardeo.es"
+              href="mailto:contacto@robert.soy"
               target="_blank"
               rel="noopener noreferrer"
             >
