@@ -56,7 +56,7 @@ const data = [
     image: ayamiweb,
     title: "ayamiweb",
     github: "",
-    demo: "",
+    demo: "https://ayami2059.wixsite.com/ayami2059",
   }
 ];
 
