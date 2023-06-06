@@ -29,6 +29,7 @@ const ProjectItem = ({ id, image, title, github, demo }) => {
             className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"
+            data-robots="noindex"
           >
             {t("live")} <HiStatusOnline className="live-icon" />
           </a>

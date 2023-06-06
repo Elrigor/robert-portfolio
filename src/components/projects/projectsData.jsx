@@ -1,56 +1,63 @@
-import IMG1 from "../../assets/hutao.png";
-import IMG2 from "../../assets/wizardeo.png";
-import IMG3 from "../../assets/mihaim.png";
-import IMG4 from "../../assets/portfolio.png";
-import IMG5 from "../../assets/tools.png";
-import IMG6 from "../../assets/task.png"; 
-import IMG7 from "../../assets/hutaobot.png";
+import hutao from "../../assets/hutao.png";
+import wizardeo from "../../assets/wizardeo.png";
+import mihaim from "../../assets/mihaim.png";
+import portfolio from "../../assets/portfolio.png";
+import tools from "../../assets/tools.png";
+import task from "../../assets/task.png"; 
+import hutaobot from "../../assets/hutaobot.png";
+import ayamiweb from "../../assets/ayamiweb.png";
 
 
 const data = [
   {
-    image: IMG1,
+    image: hutao,
     title: "hutaoweb",
     github: "https://github.com/Elrigor/hutaoWeb",
     demo: "",
   },
   {
-    image: IMG2,
+    image: wizardeo,
     title: "wizardeoweb",
     github: "",
     demo: "https://wizardeo.es",
   }, 
   {
-    image: IMG3,
+    image: mihaim,
     title: "mihaim",
     github: "",
     demo: "https://mihaim.es",
   },   
 
   {
-    image: IMG4,
+    image: portfolio,
     title: "portfolio",
     github: "https://github.com/Elrigor/robert-portfolio",
     demo: "https://robert.soy",
   },
   {
-    image: IMG5,
+    image: tools,
     title: "tools",
     github: "",
     demo: "https://tools.wizardeo.es",
   },
   {
-    image: IMG6,
-    title: "taskbot",
+    image: task,
+    title: "task",
     github: "https://github.com/Elrigor/React-Tasks-Application",
     demo: "https://elrigor.github.io/React-Tasks-Application/",
   },
   {
-    image: IMG7,
+    image: hutaobot,
     title: "hutaobot",
     github: "",
     demo: "",
   }, 
+  {
+    image: ayamiweb,
+    title: "ayamiweb",
+    github: "",
+    demo: "",
+  }
 ];
 
 export default data;
