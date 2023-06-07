@@ -29,6 +29,7 @@ const Projects = () => {
             title={project.title}
             github={project.github}
             demo={project.demo}
+            label={project.label}
           />
         ))}
       </div>
