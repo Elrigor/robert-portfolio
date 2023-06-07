@@ -4,6 +4,7 @@ import CTA from "./CTA";
 import HeaderSocial from "./HeaderSocials";
 import { useTranslation } from "react-i18next";
 import HeaderSwitches from "./HeaderSwitches";
+import TypingEffect from "./TypingEffect";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -11,9 +12,8 @@ const Header = () => {
   return (
     <header id="top">
       <div className="container header__container">
-        <h5>{t("greeting")}</h5>
-        <h1>Robert Mihai Maracine</h1>
-        <h5 className="text-light">{t("developer")}</h5>
+        <h1>{t("greeting")}</h1>
+        <TypingEffect />
         <CTA />
         <HeaderSocial />
         <HeaderSwitches />
