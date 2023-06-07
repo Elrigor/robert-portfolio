@@ -17,6 +17,41 @@ header {
   justify-content: center;
 }
 
+/* =============== POINTER  ============== */
+.typing-effect {
+  text-align: center;
+}
+
+.typing-effect-text h2 {
+  font-size: 3rem !important;
+}
+
+
+.typing-effect-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--color-white);
+  letter-spacing: 2px;
+}
+
+#typing-effect-cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 50px;
+  background-color: var(--color-white);
+  animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--color-white);;
+  }
+}
+
 /* =============== HEADER SIDES ============== */
 .header__socials {
   display: flex;
