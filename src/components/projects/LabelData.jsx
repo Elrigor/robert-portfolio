@@ -84,7 +84,7 @@ export const technologyData = {
       link: "https://www.wix.com/",
     },
     SQLite: {
-      color: "#003B57",
+      color: "#0f6087",
       link: "https://www.sqlite.org/",
     },
     Wagtail: {

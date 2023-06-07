@@ -92,12 +92,12 @@
 }
 @keyframes live-glow {
   0% {
-    color: rgb(109, 17, 17);
+    color:var(--color-bg-variant);
   }
   50% {
-    color: #f3cd9c;
+    color: transparent;
   }
   100% {
-    color: rgb(109, 17, 17);
+    color: var(--color-bg-variant);
   }
 }
