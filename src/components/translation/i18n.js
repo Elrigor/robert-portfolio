@@ -10,7 +10,9 @@ const resources = {
       know: "Know me",
       experience: "Experience",
       projects: "Projects",
-      about: "About me",
+      about: "About me",  
+      english: "English",
+      spanish: "Spanish",    
       about__description: `
       I am a person with experience in web applications.
       However, I have worked on several projects such as mobile applications, desktop applications and bots of all kinds (Discord, Telegram, Twitter etc.).
@@ -66,6 +68,8 @@ const resources = {
       working: "Años trabajando",
       b2: "Nivel de inglés B2",
       lang: "Idiomas",
+      english: "Inglés",
+      spanish: "Español",
       about__description: `
         Soy una persona con experiencia sobre todo, en apliaciones web.
         No obstante, he trabajado en varios proyectos tales como aplicaciones móviles, apliaciones de escritorio y bots de todo tipo(Discord, Telegram, Twitter etc.).

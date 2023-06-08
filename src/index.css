@@ -19,7 +19,7 @@
   --color-black: #000;
   --color-light: rgba(255, 255, 255, 0.6);
 
-  --transition: all 400ms ease;
+  --transition: all 550ms ease;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -39,6 +39,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  transition: var(--transition);
 }
 
 /* ============== GENEARL STYLES ============== */
