@@ -34,7 +34,7 @@ const ChangeLanguage = () => {
 
   return (
     <div ref={ref} className="disable__mobile__switches">
-      <a onClick={() => setShowDropdown(!showDropdown)}>
+      <a className="lang-switcher-pointer" onClick={() => setShowDropdown(!showDropdown)}>
         <IoLanguage className="icon-size" />
       </a>
       {showDropdown && (

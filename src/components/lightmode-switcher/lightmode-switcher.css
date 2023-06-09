@@ -7,6 +7,10 @@
   --color-light: rgba(0, 0, 0, 0.6);
 }
 
+#dark-light-icon{
+  cursor: pointer;
+}
+
 .lightmode-switcher {
   color: var(--color-primary);
   display: flex;
