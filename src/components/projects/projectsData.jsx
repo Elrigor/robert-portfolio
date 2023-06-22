@@ -13,7 +13,7 @@ const data = [
     image: hutao,
     title: "hutaoweb",
     github: "https://github.com/Elrigor/hutaoWeb",
-    demo: "",
+    demo: "https://elrigor.github.io/HuTaoWebDemo/index.html",
     label:"Django, Python, HTML, CSS, JS, Bootstrap, SQLite"
   },
   {
