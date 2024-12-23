@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/personal_cv.pdf";
 import { useTranslation } from "react-i18next";
 
 const CTA = () => {
