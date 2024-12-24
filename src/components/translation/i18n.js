@@ -47,6 +47,7 @@ const resources = {
       k1po4: "Official Website for the artist K1PO4",
       hao: "Official Discord Bot and Verifier that integrates a custom translation api for the Wizard101 game",
       dashboard: "Analytics Dashboard made from scratch for the Discord Hao Bot",
+      xokchat: "Fake and funny chat inspired in the rubber ducky debugging method. Based on the Spanish Livestreamer Xokas",
       // Contact
       contact: "Contact Me",
       fullname: "Your Full Name",
@@ -106,6 +107,7 @@ const resources = {
       k1po4: "Web oficial de la artista K1PO4",
       hao: "Bot Oficial y Verificador de Discord que integra una api de traducciones personalizadas para el videojuego Wizard101",
       dashboard: "Panel de Análisis hecho desde cero para el Bot de Discord Hao",
+      xokchat: "Chat Falso y divertido inspirado en el método de depuración del patito de goma. Basado en el Streamer Español Xokas",
       // Contact
       contact: "Ponte en contacto",
       fullname: "Tu Nombre Completo",

@@ -11,6 +11,7 @@ import ayami from "../../assets/ayami.png";
 import k1po4 from "../../assets/k1po4.png";
 import dashboard from "../../assets/dashboard.png";
 import hao from "../../assets/hao.png";
+import xokchat from "../../assets/xokchat.png";
 
 
 const data = [
@@ -90,6 +91,13 @@ const data = [
     github: "",
     demo: "",
     label:"TypeScript, Tailwind, ReactJS, Supabase,NextJS, HTML, CSS"
+  },
+  {
+    image: xokchat,
+    title: "xokchat",
+    github: "https://xokchat.pages.dev",
+    demo: "",
+    label:"JavaScript, Tailwind, ReactJS, HTML, CSS"
   },
   {
     image: mihaim,
