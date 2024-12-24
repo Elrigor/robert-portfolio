@@ -33,7 +33,8 @@ const resources = {
       // Projects
       personalprj: "My personal projects",
       hutaoweb: "Hutao's website, made for a Discord Bot",
-      ayamiweb: "Design, creation and positioning of the streamer Ayami2059's portfolio website",
+      ayamiweb: "Design, creation and positioning of the streamer Ayami2059's portfolio website (OLD VERSION)",
+      ayami: "Design, creation and positioning of the streamer Ayami2059's portfolio website",
       hutaobot: "Discord Bot",
       wizardeoweb: "Wizardeo Blog Web",
       task: "Tasks Website",
@@ -42,6 +43,10 @@ const resources = {
       portfolio: "Personal Portfolio",
       tools: "Collaborative tools website",
       mihaim: "Official Website for the MihaiM Construction Company",
+      roxy: "Official Website for Discord Bot Roxy Miguardia",
+      k1po4: "Official Website for the artist K1PO4",
+      hao: "Official Discord Bot and Verifier that integrates a custom translation api for the Wizard101 game",
+      dashboard: "Analytics Dashboard made from scratch for the Discord Hao Bot",
       // Contact
       contact: "Contact Me",
       fullname: "Your Full Name",
@@ -88,7 +93,8 @@ const resources = {
       // Projects
       personalprj: "Mis proyectos personales",
       hutaoweb: "Web Hutao hecha para un Bot de Discord",
-      ayamiweb: "Diseño, creación y posicionamiento de la web de la streamer Ayami2059",
+      ayamiweb: "Diseño, creación y posicionamiento de la web de la streamer Ayami2059 (VERSÓN ANTIGUA)",
+      ayami: "Diseño, creación y posicionamiento de la web de la streamer Ayami2059",
       hutaobot: "Bot de Discord",
       wizardeoweb: "Web del Blog de Wizardeo",
       task: "Web de Tareas",
@@ -96,6 +102,10 @@ const resources = {
       live: "En Vivo",
       tools: "Web de herramientas colaborativas",
       mihaim: "Web Oficial de la Empresa de Construcción MihaiM",
+      roxy: "Web Oficial del Bot de Discord Roxy Miguardia",
+      k1po4: "Web oficial de la artista K1PO4",
+      hao: "Bot Oficial y Verificador de Discord que integra una api de traducciones personalizadas para el videojuego Wizard101",
+      dashboard: "Panel de Análisis hecho desde cero para el Bot de Discord Hao",
       // Contact
       contact: "Ponte en contacto",
       fullname: "Tu Nombre Completo",
