@@ -199,7 +199,6 @@ export const technologyData = {
     color: "#3ECF8E",
     link: "https://supabase.com/",
   },
-  
 };
  
   
