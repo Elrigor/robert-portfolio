@@ -53,7 +53,7 @@ const ProjectItem = ({ id, image, title, github, demo, label }) => {
             rel="noopener noreferrer"
             data-robots="noindex"
           >
-            {id === 4 ? t("here") : t("live")}{" "}
+            {id === 1 ? t("here") : t("live")}{" "}
             <HiStatusOnline className="live-icon" />
           </a>
         )}
