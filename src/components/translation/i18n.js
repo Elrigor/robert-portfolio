@@ -21,7 +21,7 @@ const resources = {
       // Skills
       b2: "B2 English level",
       lang: "Languages",
-      knowledge: "What Knowledge Do I Have?",
+      knowledge: "What knowledge do I have?",
       skills: "Skills",
       ba: "Basic",
       in: "Intermediate",
@@ -89,7 +89,7 @@ const resources = {
       frontdev: "Desarrollo Frontend",
       web: "Administración de Webs",
       system: "Administración de Sistemas",
-      knowledge: "¿Qué Conocimientos Tengo?",
+      knowledge: "¿Qué conocimientos tengo?",
       // Projects
       personalprj: "Mis proyectos personales",
       hutaoweb: "Web Hutao hecha para un Bot de Discord",

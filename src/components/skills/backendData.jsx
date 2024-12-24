@@ -6,6 +6,7 @@ import {
   SiWagtail,
   SiFlutter,
   SiKotlin,
+  SiSupabase,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbCSharp } from "react-icons/tb";
@@ -107,6 +108,13 @@ const Backend = () => {
           <div>
             <h4>Flutter</h4>
             <small className="text-light">{t("ba")} </small>
+          </div>
+        </article>
+        <article className="skill__details">
+          <SiSupabase className="skill__details-icon" />
+          <div>
+            <h4>Supabase</h4>
+            <small className="text-light">{t("in")} </small>
           </div>
         </article>
       </div>

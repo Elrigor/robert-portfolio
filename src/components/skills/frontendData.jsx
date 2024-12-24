@@ -2,7 +2,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io5";
 import { DiJavascript1 } from "react-icons/di";
 import { FaBootstrap, FaReact, FaAngular } from "react-icons/fa";
-import { SiTailwindcss, SiNuxtdotjs, SiHtmlacademy } from "react-icons/si";
+import { SiTailwindcss, SiNuxtdotjs, SiHtmlacademy, SiNextdotjs } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import { BsPatchCheckFill } from "react-icons/bs";
 
@@ -97,6 +97,13 @@ const Frontend = () => {
           <div>
             <h4>DTD</h4>
             <small className="text-light">{t("ba")}</small>
+          </div>
+        </article>
+        <article className="skill__details">
+          <SiNextdotjs className="skill__details-icon" />
+          <div>
+            <h4>NextJS</h4>
+            <small className="text-light">{t("in")}</small>
           </div>
         </article>
       </div>

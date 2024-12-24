@@ -1,4 +1,4 @@
-import { AiFillLock } from "react-icons/ai";
+import { AiFillLock, AiFillCloud } from "react-icons/ai";
 import { IoStatsChartSharp } from "react-icons/io5";
 import { FaEnvelope } from "react-icons/fa";
 import { SiNginx, SiApache } from "react-icons/si";
@@ -70,6 +70,13 @@ const Web = () => {
             <small className="text-light">{t("in")}</small>
           </div>
         </article>
+        <article className="skill__details">
+          <AiFillCloud className="skill__details-icon" />
+          <div>
+            <h4>Cloudflare Pages</h4>
+            <small className="text-light">{t("in")}</small>
+          </div>
+        </article>        
       </div>
     </div>
   );
