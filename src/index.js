@@ -6,7 +6,7 @@ import "./index.css";
 initializei18n();
 
 // Redirect to LinkedIn
-if (window.location.pathname === "/lin") {
+if (window.location.pathname === "/in") {
     window.location.replace("https://www.linkedin.com/in/robertmima");
   }
 
