@@ -25,12 +25,12 @@ const About = () => {
             <article className="about__card">
               <BsFillAwardFill className="about__icon" />
               <h5>{t("experience")}</h5>
-              <small>2+ {t("working")}</small>
+              <small>4+ {t("working")}</small>
             </article>
             <article className="about__card">
               <RiCodeBoxFill className="about__icon" />
               <h5>{t("projects")}</h5>
-              <small>15+ {t("completed")}</small>
+              <small>30+ {t("completed")}</small>
             </article>
             <article className="about__card">
               <IoLanguageSharp className="about__icon" />
