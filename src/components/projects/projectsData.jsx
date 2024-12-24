@@ -65,6 +65,13 @@ const data = [
     label:"TypeScript, Tailwind, ReactJS, NextJS, HTML, CSS"
   },
   {
+    image: xokchat,
+    title: "xokchat",
+    github: "",
+    demo: "https://xokchat.pages.dev",
+    label:"JavaScript, Tailwind, ReactJS, HTML, CSS"
+  },
+  {
     image: hutaobot,
     title: "hutaobot",
     github: "",
@@ -91,13 +98,6 @@ const data = [
     github: "",
     demo: "",
     label:"TypeScript, Tailwind, ReactJS, Supabase,NextJS, HTML, CSS"
-  },
-  {
-    image: xokchat,
-    title: "xokchat",
-    github: "https://xokchat.pages.dev",
-    demo: "",
-    label:"JavaScript, Tailwind, ReactJS, HTML, CSS"
   },
   {
     image: mihaim,
