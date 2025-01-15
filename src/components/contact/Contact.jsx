@@ -8,18 +8,23 @@ import { useTranslation } from "react-i18next";
 const Contact = () => {
   const form = useRef();
   const { t } = useTranslation();
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm(
-      "service_8c7ok1q",
-      "template_5r55bfk",
-      form.current,
-      "GWx7QbjsUEjz2X-a2"
-    );
-
-    e.target.reset();
+    try {
+      await emailjs.sendForm(
+        "service_f35mlhi",
+        "template_5r55bfk",
+        form.current,
+        "rFxvwVXEStD6p7rkc"
+      );
+      alert("Message sent successfully!");
+      e.target.reset();
+    } catch (error) {
+      console.error("Failed to send message:", error);
+      alert("Failed to send message. Please try again.");
+    }
   };
+  
 
   return (
     <section id="contact">

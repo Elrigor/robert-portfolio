@@ -4,6 +4,8 @@ const resources = {
       // About
       home: "Home",
       download: "Download Resume",
+      view: "View Resume",
+      resume__title: "Resume",
       greeting: "Hello, I'm",
       developer: "Full Stack Developer",
       talk: "Let's talk",
@@ -62,7 +64,9 @@ const resources = {
     translation: {
       // About
       home: "Inicio",
-      download: "Descargar CV",
+      download: "Descargar Currículum",
+      view: "Ver Currículum",
+      resume__title: "Currículum",
       greeting: "Hola, soy",
       developer: "Desarrollador Full Stack",
       talk: "Hablemos",
