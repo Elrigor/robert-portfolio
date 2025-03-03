@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Modal from "react-modal";
 import { useTranslation } from "react-i18next";
 
@@ -7,14 +7,22 @@ Modal.setAppElement("#root");
 const CTA = () => {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [zoom, setZoom] = useState(0.8);
   const pdfRef = useRef(null);
 
   // URL del visor y de descarga del PDF en Google Drive
-  const pdfViewerURL = "https://drive.google.com/file/d/1ePNQ-JfYU0_HIxh7mDUilJt_BMIm3XiD/preview";
-  const pdfDownloadURL = "https://drive.google.com/uc?export=download&id=1ePNQ-JfYU0_HIxh7mDUilJt_BMIm3XiD";
+  const pdfViewerURL = "https://drive.google.com/file/d/1-ySnVHQExm0WVKMJewZRJEOychbmFZYh/preview";
+  const pdfDownloadURL = "https://drive.google.com/uc?export=download&id=1-ySnVHQExm0WVKMJewZRJEOychbmFZYh";
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = () => {
+    setZoom(0.8);
+    setIsModalOpen(true);
+  };
+
   const closeModal = () => setIsModalOpen(false);
+
+  const handleZoomIn = () => setZoom((prevZoom) => Math.min(prevZoom + 0.2, 2));
+  const handleZoomOut = () => setZoom((prevZoom) => Math.max(prevZoom - 0.2, 0.5));
 
   const handleFullscreen = () => {
     if (pdfRef.current.requestFullscreen) {
@@ -69,7 +77,7 @@ const CTA = () => {
             className="btn download-btn"
             style={{
               backgroundColor: "var(--color-primary)",
-              color: "var(--color-black)",
+              color: "var(--color-white)",
               border: "none",
               padding: "8px 16px",
               borderRadius: "5px",
@@ -104,6 +112,9 @@ const CTA = () => {
             alignItems: "center",
             position: "relative",
             height: "calc(100% - 50px)",
+            transform: `scale(${zoom})`, // Aplica el zoom inicial
+            transformOrigin: "center", // Centra el escalado
+            transition: "transform 0.3s ease", // Suaviza cambios de zoom
           }}
         >
           <iframe
@@ -127,6 +138,14 @@ const CTA = () => {
             borderTop: "1px solid var(--color-primary-variant)",
           }}
         >
+          <div>
+            <button className="btn zoom-btn" onClick={handleZoomOut}>
+              -
+            </button>
+            <button className="btn zoom-btn" onClick={handleZoomIn}>
+              +
+            </button>
+          </div>
           <button className="btn btn-primary" onClick={handleFullscreen}>
             {t("fullscreen")}
           </button>
